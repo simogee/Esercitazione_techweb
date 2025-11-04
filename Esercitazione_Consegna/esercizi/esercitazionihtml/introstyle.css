@@ -1,8 +1,44 @@
 :root{
     --bcolor: #243B55;
     --textcolor: #EFEFBB;
+    --border-basic: 2px;
+    --border-round: 4px;
+    background-color: var(--bcolor);
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
-*{
+.Esercizio.container{
+    border:1px solid #EFEFBB ;
+    border-radius: var(--border-basic);
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1rem;
+}
+.Titolo{
+    color:#5614B0;
+    
+}
+.Testo.Esercizio
+{
+    color:beige;
+    
+    max-width: 100%;
+}
+.Immagine.esplicativa img{
+    max-width: 100%;
+}
+
+.btn{
     background-color: var(--bcolor);
+    color:var(--textcolor);
+    border: 1px solid var(--textcolor);
+    border-radius: var(--border-round);
+    text-decoration: none;
+    padding:0.2rem;
 }
