@@ -54,7 +54,7 @@ article{
 	background: linear-gradient(90deg, #00f, #0ff, #00f) -100%/ 200%;
 	-webkit-background-clip: text;        
 	color: transparent;
-	font: 900 clamp(0.2em, 2vw, 2em) "futuristic", sans-serif; 
+	font: 900 clamp(2rem, 4vw, 3rem) "futuristic", sans-serif; 
 	animation: shimmer 2s linear infinite
 }
 
@@ -78,6 +78,7 @@ form{
     flex-direction: row;
     justify-content: center;
     gap:1rem;
+    padding-top:0.5rem;
 }
 input,button{
     background-color: var(--bcolor);
@@ -106,4 +107,80 @@ a{
     text-decoration: none;
     position: absolute;
     top:10px;
+}
+
+/* la pagina funzionava già, questi sono stati aggiunti solo per richiesta*/
+@media (min-width: 480px) {
+  article {
+    width: 95%;
+  }
+
+  .chat-window {
+    width: 95%;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  button {
+    width: 20%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  main {
+    height: 75%;
+  }
+
+  article {
+    width: 80%;
+  }
+
+  .chat-window {
+    width: 90%;
+    height: 65vh; 
+  }
+
+  .chat-input {
+    width: 80%;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  button {
+    width: 10rem;  
+  }
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .chat-window {
+    width: 95%;
+  }
+
+  .chat-input {
+    width: 70%;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  button {
+    width: auto;
+    padding: 0 .8rem;
+  }
 }
