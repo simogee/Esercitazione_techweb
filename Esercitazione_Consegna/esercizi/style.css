@@ -199,7 +199,7 @@ main{
   
 }
 
-/* >= 768px (tablet) */
+
 @media (min-width: 768px) {
   .upper-container {
     flex-direction: row;
@@ -207,7 +207,7 @@ main{
     justify-content: center;
   }
   .card {
-    width: calc(50% - 2rem);   /* due per riga */
+    width: calc(50% - 2rem);   /*due per riga*/
     max-width: none;
   }
    .Testodesotto{
@@ -215,7 +215,7 @@ main{
   }
 }
 
-/* >= 1024px (desktop) */
+
 @media (min-width: 1024px) {
      header p {
     font-size: 4.5rem;
@@ -243,7 +243,7 @@ footer{
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;          /* oppure width: 100%; */
+  right: 0;         
   display: flex;
   justify-content: center;
   align-items: center;

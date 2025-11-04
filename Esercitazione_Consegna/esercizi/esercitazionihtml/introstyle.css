@@ -57,3 +57,42 @@ a{
     
     justify-content: center;
 }
+
+
+@media (min-width: 480px) {
+  .Esercizio.container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .Testo.Esercizio {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .Immagine.esplicativa { /     *container*/
+    display: flex;
+    justify-content: center;   
+  }
+
+  .Immagine.esplicativa img {
+    max-width: 60%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .Esercizio.container {
+    max-width: 900px;
+  }
+
+  .Immagine.esplicativa img {
+    max-width: 60%;
+  }
+
+  .Testo.Esercizio {
+    font-size: 1.1rem;
+  }
+}
