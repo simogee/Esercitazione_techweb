@@ -1,0 +1,89 @@
+:root{
+    --bcolor: #243B55;
+    --textcolor: #EFEFBB;
+    --border-basic: 2px;
+    --border-round: 4px;
+    background-color: var(--bcolor);
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+main{
+    display: flex;
+    
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    border: 1px solid var(--textcolor);
+    box-shadow: 0 1px 8px red;
+}
+.chat-window{
+    border: 1px solid var(--textcolor);
+    box-shadow: 0 1px 8px var(--textcolor);
+    height: 70%;
+    width:90%;
+    
+    background-color: #1c2c3f;
+}
+
+/* bot futuristico che necessita il font corretto*/
+@font-face {
+  font-family: "Futuristic";
+  src: url("../../font/Orbitron-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+    /*effetto come nelle altre pagine*/
+.chat-header > p {
+	place-self: center;
+
+	background: linear-gradient(90deg, #00f, #0ff, #00f) -100%/ 200%;
+	-webkit-background-clip: text;        
+	color: transparent;
+	font: 900 clamp(0.2em, 2vw, 2em) "futuristic", sans-serif; 
+	animation: shimmer 2s linear infinite
+}
+
+@keyframes shimmer { 
+    to { 
+        background-position: 100% 
+    } 
+}
+
+.chat-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+input,button{
+    background-color: var(--bcolor);
+    border: 1px solid var(--textcolor);
+    border-radius:var(--border-round);
+    color: var(--textcolor);
+}
+
+
+footer{
+    
+    text-align: center;
+}
+
+a{
+    color:#b2dfdb;
+    text-decoration: none;
+}
