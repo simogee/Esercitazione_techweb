@@ -21,6 +21,10 @@
     --color-2: #ff2edc;
   }
 }
+/*
+fine
+*/
+
 :root{
     --bcolor: #243B55;
     --textcolor: #EFEFBB;
@@ -43,7 +47,13 @@ header p{
 nav a{
     color:#ddd;
     position: sticky;
-    top:10px;
+    top: 10px;
+    display: inline-block;   /* così prende bene lo sticky */
+    background: var(--bcolor); /* opzionale: per non vedere sotto */
+    z-index: 5;
+}
+nav{
+  height: 100%;
 }
 
 main{
@@ -222,9 +232,7 @@ main{
   .card {
     width: 20rem;              
   }
-  header p {
-    font-size: 4.5rem;
-  }
+
   .Testodesotto{
     animation: textchange 2.4s infinite ease-in-out; /* ciclo infinito parte piano, veloce, rallenta*/
     letter-spacing: 1rem;
