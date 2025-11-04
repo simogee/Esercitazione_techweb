@@ -1,6 +1,7 @@
 
-html { height: 100%;
-align-items: center; 
+html { 
+    height: 100%;
+    align-items: center; 
 }
 
 body { 
@@ -8,8 +9,6 @@ body {
     display:flex;
     align-items: center;
     flex-direction: column;
-
-
 }
 
 .loading-text {
@@ -18,11 +17,15 @@ body {
 	background: linear-gradient(90deg, #00f, #0ff, #00f) -100%/ 200%;
 	-webkit-background-clip: text;        
 	color: transparent;
-	font: 900 clamp(2em, 10vw, 10em) exo, sans-serif;
+	font: 900 clamp(2em, 10vw, 10em) exo, sans-serif; /* clamp: val minimo 2em, max: 10 em e nel mezzo 1' vW*/
 	animation: shimmer 2s linear infinite
 }
 .loading-text.undertext{
     font: 900 clamp(1em, 5vw, 5em) exo, sans-serif;
 }
 
-@keyframes shimmer { to { background-position: 100% } }
+@keyframes shimmer { 
+    to { 
+        background-position: 100% 
+    } 
+}
