@@ -71,3 +71,64 @@ dl{
 footer{
     text-align: center;
 }
+
+
+
+media (min-width: 480px) {
+  #glossario {
+    align-items: center;
+  }
+
+  dl {
+    gap: 1.5rem;
+  }
+
+  .sezione-glossario {
+    width: 18rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #glossario {
+    height: auto;
+  }
+
+  dl {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sezione-glossario {
+    flex: 0 0 16rem; 
+  }
+  .sezione-glossario:hover{
+     transform: scale(1.1);
+     color:#b2dfdb;
+     box-shadow: 0 1px 12px #ddd;
+     opacity:1;
+    }   
+}
+
+@media (min-width: 1024px) {
+
+    body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+   dl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .sezione-glossario {
+    flex: 0 0 11rem;
+    height: 7rem;
+  }
+
+ 
+}
