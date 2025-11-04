@@ -1,0 +1,127 @@
+:root{
+
+  --grad-start: #c31432;
+  --grad-end:   #240b36;
+   background: linear-gradient(to right,var(--grad-start),var(--grad-end)); /*colore background*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; 
+    align-self: center;
+    justify-content: space-between;
+    margin-top:1rem;
+   
+    
+    
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+header h1{
+    color:#feeb;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #b2dfdb;
+
+}
+
+main{
+  display: flex;
+  gap: 2rem;              /* spazi tra card */
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;            
+  text-align: center;
+  color: #feeb;
+
+}
+main h2{
+   
+    padding: 1rem 1rem;
+}
+main li{
+    list-style: none;
+    display: inline-block;
+    padding:0.5rem;
+    
+}
+main a{
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+main a:hover{
+     color: #b2dfdb;
+}
+.card {
+  border: 2px solid #fff;
+  border-radius: 2rem; 
+  padding: 2rem 1.5rem;
+  transition: transform 0.4s ease;
+  
+  width: 220px;
+  box-shadow: 0 1px 4px #ddd;
+
+
+}
+
+
+.card:hover {
+  transform: scale(1.2);
+  color:#b2dfdb;
+  box-shadow: 0 1px 12px #ddd;
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: static;
+    bottom:0;
+}
+
+.sezione.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+

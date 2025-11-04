@@ -1,0 +1,234 @@
+/* questa parte è stata adattata da un'animazione trovata su internet*/
+
+/*sezione variabili*/
+
+@property --color-1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #84ff3d;
+}
+
+@property --color-2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #2eabff;
+}
+
+/* keyframes definiscono come un elemento deve comportarsi durante l'animazione: "stati" dell'animazione */
+@keyframes gradient-change {
+  to {
+    --color-1: #2e96ff;
+    --color-2: #ff2edc;
+  }
+}
+:root{
+    --bcolor: #243B55;
+    --textcolor: #EFEFBB;
+}
+html,body{
+    background:  var(--bcolor);
+    height:100% ;
+    margin:0;
+}
+header p{
+  
+  text-align: center;
+  font-size: 2.4rem;
+  animation: gradient-change 2s linear infinite alternate;
+  background: linear-gradient(to right, var(--color-1), var(--color-2));
+  -webkit-background-clip: text; /* taglia lo sfondo del container sul testo*/
+  color: transparent;
+}
+
+nav a{
+    color:#ddd;
+    position: sticky;
+    top:10px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /*color:white;*/
+    justify-content: space-evenly;
+   
+}
+
+.upper-container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size:1rem;
+    gap: 1rem;
+    padding-top: 4rem;
+}
+
+.btn{
+    font-size: 1rem;
+    background-color:var(--bcolor);
+    color:var(--textcolor);
+    border:1px solid #EFEFBB;
+    border-radius: 1rem;
+    text-decoration: none;
+    padding: 2px;
+    
+}
+.card{
+
+    width: 100%;
+    max-width: 25rem;
+    text-align: center;
+    border: 2px solid #EFEFBB;
+    border-radius: 2rem;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    box-shadow: 0 1px 8px #ddd;
+    opacity: 0.75;
+    color:var(--textcolor);
+}
+
+.card h1{
+    font-weight: 400;
+    margin: 0;
+}
+
+.card .content {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  padding: 0 1rem;          /* padding laterale*/
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: .5rem 0 1rem 0;
+}
+
+.card ul li {
+  margin-bottom: .5rem;
+}
+
+/* quando passi sopra alla card questa si ingrandisce leggermente, l'ombra aumenta di dimensione e s'incrementa anche l'opacità del contenuto */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 1px 12px white;
+  opacity:0.90;
+}
+
+/* quando passi sopra alla card questa si allarga mostrando il contenuto hidden e si opacizza ulteriormente */
+.card:hover .content {
+  max-height: 200px;   
+  opacity: 1;
+  padding-bottom: 1rem;
+}
+
+.lower-container{
+    padding-top:2rem;
+    text-align: center;
+    font-size:40px;
+    font-family: monospace;
+}
+
+
+
+/*animazione adattata*/
+.Testodesotto{
+  width: 100%;
+  text-align: center;
+  animation: none;
+  letter-spacing: 0.5rem;
+  white-space: nowrap;
+  font-size: 1rem;
+  text-indent: 0.5rem;    
+}
+
+
+ 
+@keyframes textchange{
+  0%{
+    letter-spacing: 10px;
+    text-indent: 10px;
+  }
+  40%{
+    letter-spacing: 20px;
+    text-indent: 20px;    
+  }
+
+  80%{
+    letter-spacing: 10px;
+    text-indent: 10px;    
+  }
+  
+  
+  100%{
+    letter-spacing: 10px;
+    text-indent: 10px;    
+  }
+  
+}
+
+
+@media (min-width: 480px) {
+    
+  header p {
+    font-size: 3rem;
+  }
+  .upper-container {
+    padding: 2rem;
+    font-size:1rem;
+    align-self: center;
+  }
+  .card{
+    font-size:1rem;
+  }
+  .btn{
+    font-size:1rem;
+  }
+  .Testodesotto{
+    animation:none;
+  }
+  
+}
+
+/* >= 768px (tablet) */
+@media (min-width: 768px) {
+  .upper-container {
+    flex-direction: row;
+    flex-wrap: wrap;           
+    justify-content: center;
+  }
+  .card {
+    width: calc(50% - 2rem);   /* due per riga */
+    max-width: none;
+  }
+   .Testodesotto{
+    animation: none;
+  }
+}
+
+/* >= 1024px (desktop) */
+@media (min-width: 1024px) {
+     header p {
+    font-size: 4.5rem;
+  }
+  .upper-container {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .card {
+    width: 20rem;              
+  }
+  header p {
+    font-size: 4.5rem;
+  }
+  .Testodesotto{
+    animation: textchange 2.4s infinite ease-in-out; /* ciclo infinito parte piano, veloce, rallenta*/
+    letter-spacing: 1rem;
+ 
+    font-size: 2rem;
+    text-indent: 1rem; 
+}
+}

@@ -1,0 +1,8 @@
+:root{
+    --bcolor: #243B55;
+    --textcolor: #EFEFBB;
+}
+
+*{
+    background-color: var(--bcolor);
+}
