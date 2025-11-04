@@ -241,3 +241,16 @@ main{
     text-indent: 1rem; 
 }
 }
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;          /* oppure width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--textcolor);
+  padding: .5rem 0;
+}

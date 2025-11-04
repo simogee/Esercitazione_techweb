@@ -1,0 +1,73 @@
+:root{
+
+  --grad-start: #513170;
+  --grad-end:   #2b3a63;
+   background: linear-gradient(to right,var(--grad-start),var(--grad-end)); /*colore background*/
+   height: 100%;
+   color:#b2dfdb;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#glossario{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#glossario h2{
+   font-size: 2rem;
+   align-self: center;
+   font-family:Arial, Helvetica, sans-serif;
+}
+#glossario dl dt{
+    font-size:1.5rem;
+    font-weight: 700;
+   
+}
+#glossario dl dd{
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#b2dfdb;
+}
+.sezione-glossario{
+    padding: 1rem;
+    border: 2px solid #EFEFBB;
+    box-shadow: 0 1px 8px #ddd;
+    width: max-content;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+    width: 16rem; /*per uniformità*/
+}
+
+dl{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 1.2rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.sezione-glossario:hover{
+     transform: scale(1.2);
+     color:#b2dfdb;
+     box-shadow: 0 1px 12px #ddd;
+     opacity:1;
+    
+
+}
+footer{
+    text-align: center;
+}
