@@ -46,11 +46,7 @@ header p{
 
 nav a{
     color:#ddd;
-    position: sticky;
-    top: 10px;
-    display: inline-block;   /* così prende bene lo sticky */
-    background: var(--bcolor); /* opzionale: per non vedere sotto */
-    z-index: 5;
+    text-decoration: none;
 }
 nav{
   height: 100%;
