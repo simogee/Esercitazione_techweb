@@ -1,7 +1,7 @@
 :root{
 
-  --grad-start: #c31432;
-  --grad-end:   #240b36;
+  --grad-start: #513170;
+  --grad-end:   #2b3a63;
    background: linear-gradient(to right,var(--grad-start),var(--grad-end)); /*colore background*/
 }
 
@@ -50,7 +50,7 @@ header li {
 
 header a {
     text-decoration: none;
-    color: #555;
+    color: #b2dfdb;
     transition: all 0.3s ease 0s;
 }
 
@@ -82,8 +82,9 @@ main li{
     
 }
 main a{
-    color: #555;
+    color: #b2dfdb;
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 main a:hover{
      color: #b2dfdb;
