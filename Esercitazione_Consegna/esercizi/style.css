@@ -149,23 +149,23 @@ main{
  
 @keyframes textchange{
   0%{
-    letter-spacing: 10px;
-    text-indent: 10px;
+    letter-spacing: 5px;
+    text-indent: 5px;
   }
   40%{
-    letter-spacing: 20px;
-    text-indent: 20px;    
+    letter-spacing: 10px;
+    text-indent: 10px;    
   }
 
   80%{
-    letter-spacing: 10px;
-    text-indent: 10px;    
+    letter-spacing: 5px;
+    text-indent: 5px;    
   }
   
   
   100%{
-    letter-spacing: 10px;
-    text-indent: 10px;    
+    letter-spacing: 5px;
+    text-indent: 5px;    
   }
   
 }
@@ -217,6 +217,7 @@ main{
   .upper-container {
     justify-content: space-around;
     flex-wrap: nowrap;
+    width: 100%;
   }
   .card {
     width: 20rem;              
