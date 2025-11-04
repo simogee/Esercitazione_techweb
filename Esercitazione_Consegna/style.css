@@ -94,7 +94,7 @@ main a:hover{
   border-radius: 2rem; 
   padding: 2rem 1.5rem;
   transition: transform 0.4s ease;
-
+  opacity: 0.8;
   width: 100%;
   max-width: 15rem;
   box-shadow: 0 1px 4px #ddd;
@@ -107,6 +107,7 @@ main a:hover{
   transform: scale(1.2);
   color:#b2dfdb;
   box-shadow: 0 1px 12px #ddd;
+  opacity:1;
 
 }
 

@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap:1rem;
+    box-shadow: 0 1px 6px#b2dfdb;
 }
 .Titolo{
     color:#6f4599;
